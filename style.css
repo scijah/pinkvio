@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(253, 194, 230);
+    height: 100%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.silk-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, #e0cad9, #e8aec5, #b699d6, #e1b2e0);
+    background-size: 300% 300%;
+    animation: silkMove 20s both;
+    filter: blur(50px);
+    z-index: -1;
+    }
+    @keyframes silkMove {
+    0% { transform: translate(-10%, -10%) rotate(0deg); background-position: 0% 50%; }
+    50% { transform: translate(-5%, -15%) rotate(10deg); background-position: 100% 50%; }
+    100% { transform: translate(-10%, -10%) rotate(0deg); background-position: 0% 50%; }
+    }
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-weight: 900;
+    color: rgb(141, 53, 83);
+    font-size: 70px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+header p {
+    color: rgb(141, 53, 83);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.abt-btn, .hardware-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    font-weight: 700;
+    color: rgb(141, 53, 83);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.abt-btn:hover, .hardware-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* About Section */
+#about-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.about {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    margin-top: 300px;
+    margin-bottom: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.about h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(141, 53, 83);
+}
+
+/* Hardware Section Grid */
+#hardware-section {
+    display: grid;
+    justify-content: center;
+    gap: 90px;
+    padding: 60px;
+}
+
+
+.card {
+    width: 420px;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 90px;
+    margin-top: 110px;
+}
+
+.card img {
+    width: 160px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.3);
+}
+
+.card img {
+    width: 180px;
+    display: block;
+    margin: 10px auto;
+}
+
+.card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.card p {
+    font-weight: 600;
+    color: black;
+}
+
