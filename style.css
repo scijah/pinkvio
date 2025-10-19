@@ -13,7 +13,7 @@ body {
     height: 200%;
     background: linear-gradient(120deg, #e0cad9, #e8aec5, #b699d6, #e1b2e0);
     background-size: 300% 300%;
-    animation: silkMove 20s both;
+    animation: silkMove 10s both;
     filter: blur(50px);
     z-index: -1;
     }
@@ -147,4 +147,5 @@ header p {
     font-weight: 600;
     color: black;
 }
+
 
