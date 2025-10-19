@@ -5,6 +5,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.liquid-ether-container { 
+    position: relative; 
+    overflow: hidden; 
+    width: 100%; 
+    height: 100%; 
+    touch-action: none; 
+}
+
 .silk-background {
     position: fixed;
     top: 0;
@@ -13,7 +21,7 @@ body {
     height: 200%;
     background: linear-gradient(120deg, #e0cad9, #e8aec5, #b699d6, #e1b2e0);
     background-size: 300% 300%;
-    animation: silkMove 2s both;
+    animation: silkMove 10s linear infinite;
     filter: blur(50px);
     z-index: -1;
     }
@@ -147,6 +155,7 @@ header p {
     font-weight: 600;
     color: black;
 }
+
 
 
 
